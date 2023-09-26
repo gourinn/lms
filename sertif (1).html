@@ -1,0 +1,13 @@
+<button id="myButton" disabled>Klik Saya</button>
+
+<script>
+    // Membuat referensi ke elemen tombol
+    var myButton = document.getElementById("myButton");
+
+    // Menetapkan penundaan selama 3 menit (180000 milidetik)
+    setTimeout(function() {
+        // Mengubah status tombol menjadi aktif
+        myButton.disabled = false;
+        myButton.innerHTML = "Klik Saya (Sudah Aktif)";
+    }, 2000);
+</script>
